@@ -1,0 +1,45 @@
+<!doctype HTML>
+<html>
+<head>
+<title>Web page for testing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="http://web.cs.ucdavis.edu/~amenta/s18/reset.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,600,700,700i,900i" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="testWHS2.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> <!-- The Javascript for this page -->
+</head>
+
+<body>
+
+<div class="heading">
+<h2 id="logo">PHOTOQ</h2>
+<div class="search">
+<input type="text" onClick="textOverlay(this);" onkeydown="updateTextboxValue(event)" placeholder="  Search by tags" id="req-text"/>
+<button type="button" onClick="updateImages();">&#128269;</button>
+</div>
+</div>
+<div id="suggestionOverlay">
+<br>Press &#x23ce; to create a tag & click the &#128269; icon to search
+<hr>
+Suggested tags
+</div>
+<div id="overlay1">
+Nothing's been searched yet!
+<br><br>
+Use the search above
+</div>
+<div id="react" onClick="textOverlay(this)"></div>
+
+<script src="https://unpkg.com/react@15/dist/react.js"></script>
+<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+<script src="prop-types.js"></script>
+<script src="react-photo-gallery.js"></script>
+<script src="testWHS2.js"></script>
+
+</main>
+
+
+
+</body>
+</html>
